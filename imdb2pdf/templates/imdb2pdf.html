@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imdb2pdf</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+    <div class="container">
+        <h1>imdb2pdf</h1>
+    </div>
+    <!-- form -->
+    <form action="/link" method="POST">
+        <br>
+        <label for="imdb_link">Please insert an imdb link here:</label>
+        <input
+            type = "text"
+            placeholder="Copy imdb link here."
+            id = "imdb_link"
+            name="imdb_link"
+            class="u-full-width"
+        />
+    </form>
+
+    <div class="container">
+    {{ imdb_res }}
+    </div>
+</body>
+
+</body>
+</html>
